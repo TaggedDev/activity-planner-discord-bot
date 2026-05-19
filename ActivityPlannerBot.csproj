@@ -12,4 +12,10 @@
       <PackageReference Include="NetCord.Hosting" Version="1.0.0-alpha.489" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
