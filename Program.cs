@@ -11,10 +11,6 @@ builder.Services
     .AddApplicationCommands();
 
 var host = builder.Build();
-
-// Add commands using minimal APIs
-host.AddSlashCommand("game", "Создать мероприятие для гэймеров", () => "Здарова геймеры!");
-
-host.AddModules(typeof(AnimeSearch).Assembly);
+host.AddModules(typeof(AnimeSearchModule).Assembly);
 
 await host.RunAsync();
