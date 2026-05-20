@@ -10,7 +10,7 @@ var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services
     .AddDiscordGateway()
-    .AddTransient<AnimeParser>()
+    .AddTransient<ShikimoriAnimeParser>()
     .AddApplicationCommands();
     
 
