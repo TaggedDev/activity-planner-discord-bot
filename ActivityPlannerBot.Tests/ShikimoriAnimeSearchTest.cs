@@ -5,15 +5,15 @@ namespace ActivityPlannerBot.Tests;
 public class ShikimoriAnimeSearchTest
 {
     [Fact]
-    public void FetchAnime_WhenCalled_ShouldReturnAnimeData()
+    public async Task GetAnimeByQuery_WhenCalled_ShouldReturnAnimeData()
     {
         // Arrange
-        var parser = new ShikimoriAnimeParser(); // предполагая, что у вас есть публичный конструктор
-        
+        var fetcher = new ShikimoriAnimeParser();
+    
         // Act
-        // var result = await parser.FetchAnimeAsync("naruto");
+        var result = await fetcher.GetAnimeByQuery("Naruto");
         
         // Assert
-        // Assert.NotNull(result);
-    }
-}
+        Assert.NotNull(result);
+        Assert.Equal("Example1", result.Name);
+    }}

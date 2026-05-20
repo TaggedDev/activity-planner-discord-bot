@@ -15,7 +15,6 @@
       <PackageReference Include="NetCord.Hosting.AspNetCore" Version="1.0.0-alpha.489" />
       <PackageReference Include="NetCord.Hosting.Services" Version="1.0.0-alpha.489" />
       <PackageReference Include="NetCord.Services" Version="1.0.0-alpha.489" />
-      <PackageReference Include="xunit" Version="2.9.3" />
     </ItemGroup>
 
     <ItemGroup>
