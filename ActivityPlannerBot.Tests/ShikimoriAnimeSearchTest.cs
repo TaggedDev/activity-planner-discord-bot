@@ -16,4 +16,5 @@ public class ShikimoriAnimeSearchTest
         // Assert
         Assert.NotNull(result);
         Assert.Equal("Example1", result.Name);
-    }}
+    }
+}
